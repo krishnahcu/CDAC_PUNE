@@ -1,15 +1,19 @@
 #include<stdio.h>
 //#include<>
-struct Laptop
+typedef struct Laptop
 {
 int srno;
 char make[20];
 double cost;
-};
+}lappy;
 int main()
 {
-  struct Laptop l1={101,"HP",45000},l2;
-  struct Laptop l3, *lptr;
+  typedef int abc;
+  abc=10;
+  printf("%d\n",a);
+  
+  lappy l1={101,"HP",45000},l2;
+  lappy l3, *lptr;
   printf("%d %s %lf\n",l1.srno,l1.make,l1.cost);
   printf("Enter laptop details(id, make, cost)\n");
   scanf("%d %s %lf",&l2.srno,&l2.make,&l2.cost);
